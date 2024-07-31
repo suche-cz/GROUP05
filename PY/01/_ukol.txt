@@ -1,0 +1,14 @@
+vytvořte script, který zjistí jestli je věk teenager nebo ne:
+
+teenager je od 13-19 let
+
+uživatel zadá číslo (věk)
+
+pokud je teenager, vypíše "jsi teenager"
+jinak "nejsi teenager"
+
+vytvořte nový repozitář nebo nahrajte existujícího repozitáře
+
+jako test_teenager.py
+
+
