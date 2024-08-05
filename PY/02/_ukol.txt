@@ -1,0 +1,5 @@
+vytvořte user.py kde
+uživatel zadá své jmeno a věk pomocí input
+uložte tyto informace do souboru
+user.txt
+

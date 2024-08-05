@@ -1,0 +1,25 @@
+VS kod
+Python moduly
+
+Založení Gituhub repozitáře
+
+ukoly
+
+opakování
+
+výpočet 
+
+
+1. boolean - if
+2. čtení a zapis do souboru
+
+
+na příště:
+
+users.txt
+suche mojeTajneheslo
+patrik aksjdakjsda
+lena askdlasd
+
+
+
