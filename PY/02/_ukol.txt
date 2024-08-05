@@ -1,5 +1,10 @@
-vytvořte user.py kde
+vytvořte 02_user.py kde
 uživatel zadá své jmeno a věk pomocí input
 uložte tyto informace do souboru
-user.txt
+02_user.txt
 
+
+poznámka:
+prefix 02_ je tam kvuli tomu, že se o bude řadit podle názvu a bude jednoduše dohledatelné
+pokud můžete přejmenujte první úkol na 01_test_teenager.py
+děkuji :)
