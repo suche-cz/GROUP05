@@ -1,0 +1,8 @@
+1) co je to PC, HW + SW
+2) co je to python a jeho vlastnosti
+3) instalace pythonu
+4) první script
+5) možnosti spouštění pythonu
+6) matematické operace + boolean operace
+7) input, print
+8) podmínky

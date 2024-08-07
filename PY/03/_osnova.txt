@@ -1,0 +1,15 @@
+1) github - domácí úkoly
+
+2) opakování
+- podmínky
+- otevírání souboru
+- chování hodnot v boolean
+
+3) user přihlášení
+
+/users/
+suche.txt
+jan.txt
+jakub.txt
+
+
