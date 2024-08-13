@@ -1,0 +1,8 @@
+python funkce:
+https://www.geeksforgeeks.org/python-functions/
+
+python knihovna requests
+https://requests.readthedocs.io/en/latest/
+
+záznam:
+

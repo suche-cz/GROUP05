@@ -1,0 +1,5 @@
+1. vaše github repozitáře pro úkoly
+2. git vs github
+3. opakování syntaxe funkce
+4. dodělat funkce pro prohlašování a registrace
+5. další funkce

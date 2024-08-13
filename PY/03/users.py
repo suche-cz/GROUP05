@@ -34,11 +34,19 @@ def get_user_filename(username):
 def do_user_exists(filename):
     return os.path.isfile(filename)
 
-def login():
-    pass
+def login(filename, password):
+    with open(filename) as file:
+        content = file.read()
 
-def register():
-    pass
+        if content == password:
+            return True
+    
+    return False
+
+def register(filename, password):
+    with open(filename, mode='w') as file:
+        file.write(password)
+        print("registrace úspěšná")
 
 
 user_folder = 'C:\\AKADEMIE\\GROUP05\\PY\\03\\users'
@@ -54,11 +62,7 @@ if volba == '1':
     success = False
 
     if user_exists:
-        with open(filename) as file:
-            content = file.read()
-
-            if content == password:
-                success = True
+        success = login(filename, password)
     
     if success:
         print('úspěšné příhlášení')
@@ -70,15 +74,12 @@ elif volba == '2':
 
     username, password = get_user_data()
     filename = get_user_filename(username)
-
     user_exists = do_user_exists(filename)
 
     if user_exists:
         print("zvolte prosím jiný username")
     else:
-        with open(filename, mode='w') as file:
-            file.write(password)
-            print("registrace úspěšná")
+        register(filename, password)
 
 else:
     print('neplatná volba')
