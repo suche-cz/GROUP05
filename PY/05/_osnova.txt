@@ -1,0 +1,6 @@
+- máme stahovač html stránek
+- udělat stahovač obrázků
+
+
+
+todo: příště: zpracovat data z MDČR - faktury
