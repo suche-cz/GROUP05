@@ -1,4 +1,5 @@
 domácí úkol:
+vytvořte soubor 06_cisla.py
 
 máte tato čísla
 
