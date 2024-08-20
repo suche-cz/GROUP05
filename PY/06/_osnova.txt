@@ -1,0 +1,3 @@
+1 - pomocí for cyklu najít min, max, sumu
+2 - projít faktury MDČR a zjistit, která firma dostala nejvíce pěněz
+min, max, celkem, a firma s největším vydělkem - pozor na toto potřebujeme dict
