@@ -19,3 +19,7 @@ with open('PY/06/faktury_md_2024.csv', encoding='utf-8') as file:
     
     print(max_castka)
     print(max_spolecnost)
+
+
+
+
