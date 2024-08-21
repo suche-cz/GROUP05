@@ -5,8 +5,7 @@ studenti = ['Věra', 'Jan', 'Dmitry P.', 'Milan', 'Dmitry Y.', 'Timur']
 
 pocet = len(studenti)
 
-for index in range(0, pocet, 2):
-    print(index, index + 1)
-    print(studenti[index], studenti[index + 1])
-
+for index in range(0, pocet, 3):
+    print(index, index+1, index+2)
+    print(studenti[index], studenti[index+1], studenti[index+2])
 
