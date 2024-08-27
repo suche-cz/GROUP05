@@ -1,0 +1,24 @@
+while cyklus vyděláváním peněz
+
+další datové struktury
+
+int, str, float, bool, NoneType
+- primitivní datové typy
+- immutable
+
+list
+[1,2,3,"askdjalsd"]
+- mutable
+
+dict - {'key': 'value', 'name': 'Suche'}
+- mutable
+
+set - množina
+- mutable
+
+tuple - list, který nedá modifikovat
+- immutable
+
+
+
+faktury mdčr pomocí dict
