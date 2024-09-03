@@ -1,0 +1,25 @@
+1. práce s dict
+vytvořte soubor 10_dict.py
+kde bude:
+ceny_potravin = {
+    'máslo': 30,
+    'chleba': 20,
+    'sýr': 30,
+    'jablko': 5
+}
+
+a) přidejte novou položku 'mléko' s částkou 25
+b) zjistete, který produkt je nejlevnější
+c) kolik mě bude stát, když si koupím 4x jablka, 1x máslo, a 2x sýr
+udělejte printy pro kontrolu
+
+----------------------------------------------
+
+2. práce se set (množina)
+vytvořte soubor 10_set.py
+mám 2 sety přátel (např jako na facebooku) a chci jistit, kteří jsou společní a 
+kolik je to celkem lidí
+
+friends_set1 = {"Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Heidi", "Ivan", "Judy"}
+friends_set2 = {"Charlie", "Eve", "Bob", "Frank", "Mallory", "Oscar", "Peggy", "Trent", "Victor", "Walter"}
+udělejte printy pro kontrolu
