@@ -18,11 +18,10 @@ do kterého pomocí for cyklu přidáte pro každý klíč, délku názvu státu
 
 výsledek tedy bude:
 staty_delka = {
-    'CZ': 6,
+    'CZ': 5,
     'SK': 9,
     'PL': 6,
     'DE': 7,
     'AT': 8,
     'HU': 8,
 }
-

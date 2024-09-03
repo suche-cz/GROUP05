@@ -1,0 +1,24 @@
+1. kontrola domácích úkolů
+2. opakování cykly
+3. opakování datové struktury
+4. cvičení pynative?
+
+5. další datové struktury
+- set, tuple
+
+6. importy, moduly (knihovny), packages, frameworks
+různé druhy importů
+instalace
+rozdíl mezi modulem a packages
+framework
+
+windows
+python -m pip install matplotlib
+
+mac, linux
+pip install matplotlib
+python3 -m pip install matplotlib
+
+
+7. matplotlib - vykreslení grafu
+
