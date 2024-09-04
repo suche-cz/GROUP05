@@ -1,0 +1,25 @@
+1. skončili jsme instalací modulu matplotlib
+2. kam se to nainstalovalo
+
+Windows:
+
+standarní knihovny:
+c:\Python\Python311\Lib\
+
+nainstalované knihovny:
+c:\Python\Python311\Lib\site-packages\
+
+Mac OS
+
+Systémové instalace Pythonu:
+/Library/Frameworks/Python.framework/Versions/<verze_pythonu>/lib/python<verze>/site-packages
+
+Python z Homebrew:
+/usr/local/lib/python<verze>/site-packages
+
+Uživatelé (při použití --user):
+~/Library/Python/<verze_pythonu>/lib/python/site-packages
+
+
+
+matplotlib - vykreslení grafu
