@@ -1,5 +1,8 @@
+https://docs.python.org/3/tutorial/datastructures.html
+
 1. skončili jsme instalací modulu matplotlib
 2. kam se to nainstalovalo
+3. vytvoření vlastního - kam to umístit
 
 Windows:
 
@@ -8,6 +11,7 @@ c:\Python\Python311\Lib\
 
 nainstalované knihovny:
 c:\Python\Python311\Lib\site-packages\
+
 
 Mac OS
 
@@ -22,4 +26,5 @@ Uživatelé (při použití --user):
 
 
 
-matplotlib - vykreslení grafu
+4. matplotlib - vykreslení grafu
+5. try except
