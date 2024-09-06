@@ -1,0 +1,14 @@
+vytvořte soubor 11_graf.py
+
+vytvořte sloupcový graf (bar chart) pomocí matplotlib:
+
+data = {
+    'Praha': 1_384_732,
+    'Brno': 400_566,
+    'Ostrava': 284_765,
+    'Plzeň': 185_599,
+}
+
+ukázku máte v test_bar_chart.py
+je možné že data budete muset upravit nebo použit nějaké dict metody,
+aby jste dostali vhodné vstupy pro graf
