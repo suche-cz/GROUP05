@@ -1,0 +1,7 @@
+Try Except a Chyby v Pythonu
+https://docs.python.org/3/tutorial/errors.html
+https://www.w3schools.com/python/python_try_except.asp
+https://www.geeksforgeeks.org/python-try-except/
+
+Záznam
+https://itstepedu.sharepoint.com/:v:/s/FEPY11/ESTGJk1TufVAn0aamAlQDzYBjhdlOqbxiSbcLXV-QxIMpg?e=ZHyhCy
