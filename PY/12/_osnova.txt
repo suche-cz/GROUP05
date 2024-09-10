@@ -1,0 +1,19 @@
+0. domácí úkoly
+1. cvičení z pynative (každou hodinu: 2 příklady spolu, 1 samostatně)
+2. try-except
+
+- opakování funkce
+- search algoritmus
+
+3. algoritmizace
+- slovní popis
+- vývojový diagram, či jiní diagram
+- pseudo-kód
+- programový kód
+
+- co to je
+- vlastnosti
+- buble sort
+
+Funkce
+- rekurze
