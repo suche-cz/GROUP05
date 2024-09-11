@@ -1,0 +1,36 @@
+1. zkontrolovat úkol z 11
+2. cvičení z pynative
+3. algoritmus
+https://cs.wikipedia.org/wiki/Algoritmus
+
+Brainstorming:
+Program který dokáže uživateli něco udělat
+Posloupnost činností
+Rovnice - vypočet z hodnot
+
+
+- co to je
+- jaké má vlastnosti
+- příklady:
+    - vyhledávací algoritmus
+    - recept -> použití receptu
+    - řadíci / třídicí algoritmus
+    - výběr produtků
+    - různé procesy
+    - ... jsou všudy přítomné
+
+- jak znozorňujeme algoritmy:
+    - slovní popis
+    - vývojový diagram, či jiní diagram
+    - pseudo-kód
+    - programový kód
+
+Buble sort
+https://www.swtestacademy.com/wp-content/uploads/2021/11/bubble-sort-animation-swtestacademy-bg.gif
+https://www.programmingsimplified.com/images/c/bubble-sort.gif
+
+
+4. OOP
+- co to je
+- vztah třídy a instance
+- vlastnosti a chování
