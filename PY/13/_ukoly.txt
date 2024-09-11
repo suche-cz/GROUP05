@@ -1,0 +1,15 @@
+1. podívejte se na algoritmus přátelství 
+https://www.youtube.com/watch?v=nUHbVRSLlEs
+
+2. vytvořte soubor 13_oop.py
+a v něm třídu Planeta, která bude obsahovat:
+atributy:
+- poradi 
+- nazev
+
+a metodu info
+která řekne "Toto je [název planety] a je [pořadí] od Slunce"
+
+vytvořte 2 instance
+- Země
+- a nějakou další planetu
