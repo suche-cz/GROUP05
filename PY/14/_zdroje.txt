@@ -1,0 +1,8 @@
+
+Můžete si přečíst něco o oop (je tam i budoucí látka)
+https://cs.wikipedia.org/wiki/Objektov%C4%9B_orientovan%C3%A9_programov%C3%A1n%C3%AD
+https://www.pythoncheatsheet.org/cheatsheet/oop-basics
+
+
+Nahrávka:
+https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240916_180701-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view

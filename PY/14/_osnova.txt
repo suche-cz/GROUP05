@@ -1,0 +1,14 @@
+1. ukoly
+2. opakování OOP
+
+Třída Clovek
+- každý člověk bude mít id, jméno, věk?? (property), krátký text 
+- 
+- seznam přátel
+- přidat do seznamu
+- odebrat ze seznamu
+
+- vygenerování profilu v HTML
+
+
+Další třída pro vygenerování seznamu lidí + jejich odkazy

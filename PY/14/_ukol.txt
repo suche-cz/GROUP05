@@ -1,0 +1,9 @@
+vytvořte 14_oop_telefon.py
+
+vytvořte třídu MobilePhone
+
+vymyslete k této třídě smysluplné atributy a metody
+- 3-5 atributy (jaké vlastnosti a parametry by mohl mít mobilní telefon?)
+- 2 metody (jaké chování (metody) by telefon mohl mít?)
+
+vytvořte 2 instance
