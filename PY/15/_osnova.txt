@@ -1,0 +1,16 @@
+Dodělat třídu Clovek
+- přidat metodu pro přidání více přátel
+- přidat metodu pro kontrolu společných přátel
+- přidat metodu pro vygenerování HTML profilu
+    - class template
+
+- override pomocí dědičnosti ?
+- nebo pomocí parametru ?
+
+TODO:
+rozdělit Cloveka a GeneratorProfilu
+udělat proklikávací list všech
+udělat proklikávací seznam přátel
+
+Probrat další principy OOP
+
