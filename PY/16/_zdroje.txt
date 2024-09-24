@@ -1,0 +1,15 @@
+Přehled OOP
+https://www.geeksforgeeks.org/python-oops-concepts/
+https://realpython.com/python3-object-oriented-programming/
+
+Kompozice vs Dědičnost
+https://realpython.com/inheritance-composition-python/
+
+Img dědičnost
+https://images.app.goo.gl/Q6hQpPX7Thhmt5Dk7
+
+Analytickcké modelování
+http://www.objects.cz/download/AM_UML.pdf
+
+Záznam:
+https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240923_180008-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view

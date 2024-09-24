@@ -17,5 +17,5 @@ Příklad použití:
 muj_ucet = BankAccount('Jan Novák', 1000)
 muj_ucet.deposit(10000)
 muj_ucet.withdraw(500)
-muj_ucet.print()
+muj_ucet.print
 

@@ -1,0 +1,226 @@
+<!-- oop.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* style.css */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            border: 3px solid #069;
+            height: 100vh;
+            /* 100 view height */
+            width: 100vw;
+            /* 100 view width */
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .tank {
+            width: 50px;
+            height: 40px;
+            background: #333;
+            position: absolute;
+        }
+
+        .tank .delo {
+            width: 40px;
+            height: 10px;
+            background: #000;
+            position: relative;
+            top: 15px;
+            left: 25px;
+        }
+
+        .strela {
+            position: absolute;
+            background: red;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transition: transform 300ms;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        /*
+        OOP = objektově orientované programování
+        Snaha o reprezentaci pomocí objektů
+        - atributy - hodnoty = informace, stav objektu
+        - metody - chování = činnosti co ten objekt umí
+
+        Tank:
+        - atributy: x, y, speed
+        - metody: goLeft, střelba ...
+
+        Třída vs Instance
+        třída = obecná definice (škola)
+        instance = konkrétní výskyt (moje škola z dětství)
+        */
+
+        class Strela {
+            constructor(strelec) {
+                this.x = strelec.x + 20;
+                this.y = strelec.y + 20;
+                this.html = null;
+                this.strelec = strelec;
+            }
+            renderToHtml() {
+                this.html = document.createElement('div');
+                this.html.classList.add('strela');
+                this.html.style.left = this.x + 'px';
+                this.html.style.top = this.y + 'px';
+                document.body.appendChild(this.html);
+            }
+            destroy(interval) {
+                clearInterval(interval);
+                document.body.removeChild(this.html);
+            }
+            vystrel(angle) {
+                // this.html.style.transform = 'translateX(100px)';
+                let dostrel = 1000;
+                let delka = 0;
+
+                let interval = setInterval(() => {
+                    delka += 1;
+                    if (delka > dostrel) this.destroy(interval);
+
+                    // let allTanks = [tank1, tank2, tank3];
+                    allTanks.forEach((tank) => {
+                        let zasah = checkIntersection(tank.html, this.html);
+                        if (tank !== this.strelec && zasah) {
+                            this.destroy(interval);
+                            tank.destroy();
+                        }
+                    });
+
+                    if (angle === 0) {
+                        this.x += 1;
+                        this.html.style.left = this.x + 'px';
+                    }
+                    if (angle === 180) {
+                        this.x -= 1;
+                        this.html.style.left = this.x + 'px';
+                    }
+                    if (angle === 90) {
+                        this.y += 1;
+                        this.html.style.top = this.y + 'px';
+                    }
+                    if (angle === -90) {
+                        this.y -= 1;
+                        this.html.style.top = this.y + 'px';
+                    }
+                }, 1);
+            }
+        }
+        
+
+        class Tank {
+            constructor(posX, posY, speed) {
+                this.x = posX;
+                this.y = posY;
+                this.angle = 0;
+                this.speed = speed;
+                this.html = null;
+            }
+
+            goLeft() {
+                this.x -= this.speed;
+                this.angle = 180;
+                this.render();
+            }
+            goRight() {
+                this.x += this.speed;
+                this.angle = 0;
+                this.render();
+            }
+            goUp() {
+                this.y -= this.speed;
+                this.angle = -90;
+                this.render();
+            }
+            goDown() {
+                this.y += this.speed;
+                this.angle = 90;
+                this.render();
+            }
+
+            render() {
+                this.html.style.left = this.x + 'px';
+                this.html.style.top = this.y + 'px';
+                this.html.style.transform = 'rotate(' + this.angle + 'deg)';
+            }
+
+            renderToHtml() {
+                this.html = document.createElement('div');
+                let delo = document.createElement('div');
+                this.html.appendChild(delo);
+                this.html.classList.add('tank');
+                delo.classList.add('delo');
+                document.body.appendChild(this.html);
+                this.render();
+            }
+
+            vystrel() {
+                let s = new Strela(this);
+                s.renderToHtml();
+                s.vystrel(this.angle);
+            }
+
+            destroy() {
+                document.body.removeChild(this.html);
+            }
+        }
+
+        // funkce pro nastavení ovládání
+        function addControll(tank, keyUp, keyDown, keyLeft, keyRight, keyStrela) {
+            document.addEventListener('keydown', function() {
+                if (event.code === keyUp) tank.goUp();
+                else if (event.code === keyDown) tank.goDown();
+                else if (event.code === keyLeft) tank.goLeft();
+                else if (event.code === keyRight) tank.goRight();
+                else if (event.code === keyStrela) tank.vystrel();
+            });
+        }
+
+        let tank1 = new Tank(10, 20, 10); // vytvoření instance z třídy Tank
+        tank1.renderToHtml();
+        let tank2 = new Tank(50, 100, 5);
+        tank2.renderToHtml();
+        let tank3 = new Tank(50, 200, 5);
+        tank3.renderToHtml();
+
+        addControll(tank1, 'KeyW', 'KeyS', 'KeyA', 'KeyD', 'KeyE');
+        addControll(tank2, 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'KeyL');
+
+        let allTanks = [tank1, tank2, tank3];
+
+
+        // funkce pro detekci kolize - střela zasáhne tank
+        function checkIntersection(element1, element2) {
+            const rect1 = element1.getBoundingClientRect();
+            const rect2 = element2.getBoundingClientRect();
+
+            return !(
+                rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom
+            );
+        }
+    </script>
+
+</body>
+
+</html>

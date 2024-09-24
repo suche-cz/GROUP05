@@ -1,0 +1,23 @@
+1. docházka
+2. domácí úkoly
+
+OOP:
+
+Třída vs Instance
+
+Atributy
+ - instanční (instance variables)
+ - třídní (class variables)
+Metody
+ - instanční (instance methods)
+ - třídní (class methods)
+ - statické (static methods)
+
+@property
+
+Koncepty a principy v OOP
+- Kompozice (Composition) = složení
+- Zapouzdření (Encapsulation)
+- Polymorfismus (Polymorphism) = poly = více, morfismus = tvary => více tvárnost
+- Dědičnost (Inheritance)
+
