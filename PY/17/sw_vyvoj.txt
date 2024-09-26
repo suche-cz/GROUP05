@@ -1,0 +1,6 @@
+Náš projekt = dům
+
+představa => návrh = design (analytik komunikuje se zákaníkem)
+schémeta + diagramy pro vývoj sw
+
+

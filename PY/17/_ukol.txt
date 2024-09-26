@@ -1,0 +1,24 @@
+Můžeme pomocí OOP udělat strom rodiny, tím že člověk má odkazy na své rodiče
+https://images.app.goo.gl/GH5hAwepae4gnB8r7
+
+
+vytvořte třídu Person, která bude mít atributy:
+- name: str
+- mother (odkaz na matku) - volitené, defaultně None
+- father (odkaz na otce) - volitené, defaultně None
+
+metody:
+- get_parents() - která vrátí tuple (mother, father)
+
+
+Použití:
+
+john = Person('John')
+lena = Person('Lena')
+
+peter = Person('Peter', mother=lena, father=john)
+
+print(peter.get_parents()) // vrátí (john, lena) - jako instance v tuple
+
+print(lena.get_parents()) //vrítí (None, None)
+

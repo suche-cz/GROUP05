@@ -3,6 +3,8 @@
 """
 1. potomek je speciální případ rodiče
 2. potomek je schopen na 100% nahradit rodiče
+
+abstraktní třída
 """
 
 class Clovek:

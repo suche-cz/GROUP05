@@ -1,0 +1,16 @@
+textové zdroje z předchozích hodin
+
+obrázky:
+
+Kompozice - vztah mezi instancemi
+https://images.app.goo.gl/o12ix2CwGhSB75a46
+dělíme na 2 typy podle povinnosti vazby
+- agregace: - nepovinná vazba (motor je nazavislý na autě)
+- kompozice: povinná vazba (stránka je součástí knihy)
+
+
+Dědičnost - herarchie tříd - vztah mezi třídami
+https://images.app.goo.gl/AKR4J6soDDo5kmkx6
+
+záznam:
+https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240925_180239-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view

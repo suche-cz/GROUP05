@@ -13,7 +13,7 @@ příklad použití:
 my_dog = Dog('Stark')
 my_dog.sound() # printuje 'Stark: Wof'
 
-my_cat = Cog('Dizzy')
+my_cat = Cat('Dizzy')
 my_cat.sound() # printuje 'Dizzy: mňau'
 
 name v bude v obou případech dostupné přes ._name
