@@ -20,5 +20,5 @@ peter = Person('Peter', mother=lena, father=john)
 
 print(peter.get_parents()) // vrátí (john, lena) - jako instance v tuple
 
-print(lena.get_parents()) //vrítí (None, None)
+print(lena.get_parents()) //vrátí (None, None)
 

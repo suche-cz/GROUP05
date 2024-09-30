@@ -51,16 +51,38 @@ class Produkt:
         self.nazev = nazev
         self.cena = cena
         self.polozky = {} # TODO: nastavít jako privátní
+        """
+        {
+            vyrobni_cislo(_id): PolozkaProduktu(_id),
+            1: <PolozkaProduktu>,
+            2: <PolozkaProduktu>,
+        }
+        """
     
     def __str__(self):
         return f'<Produkt> {self.nazev}'
 
-    def add(self, _id: int):
-        self.polozky[_id] = PolozkaProduktu(_id, self)
+    def add(self, _id: int=None, polozka: 'PolozkaProduktu'=None):
+        if not _id and not polozka:
+            raise ValueError('Zadej jedno z _id nebo polozka')
+        
+        if _id:
+            polozka = PolozkaProduktu(_id, self)
 
-    def get(self):
+        self.polozky[polozka.id] = polozka
+
+
+    def get(self) -> 'PolozkaProduktu':
         first_id = tuple(self.polozky)[0] # dalo by se udělat jako next(iter(self.polozky), None)
         return self.polozky.pop(first_id)
+
+    def info(self):
+        for key, item in self.polozky.items():
+            print(key, item)
+            
+        print(f'Celkem {self.nazev}:', len(self.polozky))
+        print()
+
 
 
 class PolozkaProduktu:
@@ -77,15 +99,37 @@ class PolozkaProduktu:
 class Nakup:
     def __init__(self):
         self.datum = dt.datetime.now()
-        self.polozky = []
+        self.polozky: list[PolozkaProduktu] = []
+    
+    def add(self, produkt: Produkt):
+        # TODO: kontrola zda exituje na skladu
+        self.polozky.append(produkt.get())
+
+    def remove(self, produkt: Produkt):
+        for item in self.polozky:
+            if item.produkt == produkt:
+                self.polozky.remove(item)
+    
+    def faktura(self):
+        pass # TODO: dodělat
+
 
 
 p1 = Produkt('IPhone 16', 20_000) # katalogový produkt
 p2 = Produkt('Televize LG', 10_000)
 
-p1.add(1)
-p1.add(2)
-p1.add(3)
+p1.add(_id=1)
+p1.add(polozka=PolozkaProduktu(4, p1))
+p1.add(_id=2)
+p1.add(_id=3)
+
+print(p1.get())
+
+# p1.info()
+# p2.info()
+
+exit()
+
 
 dalsi_iphone = p1.get()
 dalsi_iphone = p1.get()
