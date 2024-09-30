@@ -38,11 +38,8 @@ položka = [
 
 import datetime as dt
 
-class Cena:
-    def __init__(self, produkt, datum, hodnota):
-        self.produkt = produkt   
-        self.datum = datum
-        self.hodnota = hodnota
+class ProductEmptyError(Exception):
+    pass
 
 
 class Produkt:
@@ -50,14 +47,7 @@ class Produkt:
     def __init__(self, nazev: str, cena: int):
         self.nazev = nazev
         self.cena = cena
-        self.polozky = {} # TODO: nastavít jako privátní
-        """
-        {
-            vyrobni_cislo(_id): PolozkaProduktu(_id),
-            1: <PolozkaProduktu>,
-            2: <PolozkaProduktu>,
-        }
-        """
+        self._sklad = {}
     
     def __str__(self):
         return f'<Produkt> {self.nazev}'
@@ -69,18 +59,20 @@ class Produkt:
         if _id:
             polozka = PolozkaProduktu(_id, self)
 
-        self.polozky[polozka.id] = polozka
-
+        self._sklad[polozka.id] = polozka
 
     def get(self) -> 'PolozkaProduktu':
-        first_id = tuple(self.polozky)[0] # dalo by se udělat jako next(iter(self.polozky), None)
-        return self.polozky.pop(first_id)
+        if not self._sklad:
+            raise ProductEmptyError()
+
+        first_id = tuple(self._sklad)[0] # dalo by se udělat jako next(iter(self.polozky), None)
+        return self._sklad.pop(first_id)
 
     def info(self):
-        for key, item in self.polozky.items():
+        for key, item in self._sklad.items():
             print(key, item)
             
-        print(f'Celkem {self.nazev}:', len(self.polozky))
+        print(f'Celkem {self.nazev}:', len(self._sklad))
         print()
 
 
@@ -94,25 +86,46 @@ class PolozkaProduktu:
     def __str__(self):
         # f'{self.produkt.nazev}: {self.id}'
         return self.produkt.nazev + ': ' + str(self.id)
+    
+    def __repr__(self):
+        return str(self)
 
 
 class Nakup:
     def __init__(self):
         self.datum = dt.datetime.now()
-        self.polozky: list[PolozkaProduktu] = []
+        self._polozky: list[PolozkaProduktu] = []
     
     def add(self, produkt: Produkt):
-        # TODO: kontrola zda exituje na skladu
-        self.polozky.append(produkt.get())
+        try:
+            polozka = produkt.get()
+            print(polozka, 'přidána do košíku')
+            self._polozky.append(polozka)
+        except ProductEmptyError:
+            print('Tato položka není dostupná', produkt)
 
     def remove(self, produkt: Produkt):
-        for item in self.polozky:
+        # Uděleje metodu clear na třídě Nakup, která vysype celý košík
+        for item in self._polozky:
             if item.produkt == produkt:
-                self.polozky.remove(item)
+                self._polozky.remove(item)
+                break # chceme odstranit pouze jednou
+    
+    def clear(self):
+        # self._polozky = []
+        self._polozky.clear()
     
     def faktura(self):
-        pass # TODO: dodělat
+        print('---------- Faktura ----------')
+        # celkem = sum(x.produkt.cena for x in self._polozky)
+        celkem = 0
+        for item in self._polozky:
+            celkem += item.produkt.cena
+            print(item, '\t', item.produkt.cena, 'Kč')
 
+        print('-----------------------------')
+        print('Celkem:', '\t', celkem, 'Kč')
+        print('-----------------------------')
 
 
 p1 = Produkt('IPhone 16', 20_000) # katalogový produkt
@@ -122,23 +135,24 @@ p1.add(_id=1)
 p1.add(polozka=PolozkaProduktu(4, p1))
 p1.add(_id=2)
 p1.add(_id=3)
-
-print(p1.get())
+p1.add(_id=5)
+p1.add(_id=6)
+p1.add(_id=7)
+p1.add(_id=8)
+p2.add(_id=10)
 
 # p1.info()
 # p2.info()
 
-exit()
+muj_nakup = Nakup()
+muj_nakup.add(p1)
+muj_nakup.add(p1)
+muj_nakup.add(p1)
+muj_nakup.add(p1)
+muj_nakup.add(p1)
+muj_nakup.add(p2)
+# muj_nakup.remove(p1)
 
+muj_nakup.faktura()
 
-dalsi_iphone = p1.get()
-dalsi_iphone = p1.get()
-dalsi_iphone = p1.get()
-dalsi_iphone = p1.get() # TOTO vyhodí chybu - TODO: opravit
-
-print(dalsi_iphone)
-print('-----------------')
-
-for key, value in p1.polozky.items():
-    print(value)
-    # IPhone 16: 1298379873
+p1.info()
