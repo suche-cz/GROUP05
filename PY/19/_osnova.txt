@@ -1,0 +1,20 @@
+1. Jednotkové test (Unit Testing)
+- testování je vhodné pro začatečníka ?
+
+Testování
+- manuální testování
+- polo-automatizované
+- automatizované testování - praxe v kodování
+
+Jednotkové test:
+jednotka - funkční celek
+ - funkce
+ - třida
+ - metoda
+ - knihovna
+
+TDD - test driven development
+
+2. SOLID Classes - principy
+
+3. Metody vývoje SW
