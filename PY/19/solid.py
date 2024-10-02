@@ -1,12 +1,22 @@
-# solid.py
-
 """
-SOLID - principy pro psaní kvalitního kódu
+SOLID - principy pro psaní kvalitního kódu - viz níže
 + kniha: Clean Code - Čistý kód
 + správně pojmenovat názvy
 + programovat na různých urovních abstrakce
     - nemíchat různé úrovně dohromady
-    - příklad: fabrika, kontrolu kvality děláme jinde než výrobu šroubků
+    - příklad fabrika: kontrolu kvality děláme jinde než výrobu šroubků
+    - příklad restaurace:
+        - úroveň zásobování
+        - úroveň přípravy (čištění, krájení surovin)
+        - úroveň vaření
+        - úroveň kompletace a podávání
+        - uroveň komunikace se zákazníkem
+        - uroveň čištění
+        + někdo to celé musí řídit
+        (a teď si představte že by toto vše bylo na jednom místě ...)
+
+
+SOLID PRINCIPY
 
 S - single responsibility principle
 - porušení poznáme podle:

@@ -1,4 +1,3 @@
-
 UnitTest
 https://docs.python.org/3/library/unittest.html
 https://realpython.com/python-unittest/
@@ -6,6 +5,12 @@ https://realpython.com/python-unittest/
 Solid Principy v Pythonu
 https://gist.github.com/suche-cz/b0b860ff5ff84643079bfaed0b4a534a
 https://realpython.com/solid-principles-python/
+
+Solid Principy obrázek
+https://raw.githubusercontent.com/suche-cz/GROUP05/refs/heads/main/PY/19/SOLID.webp
+
+Solid Principy Text
+https://github.com/suche-cz/GROUP05/blob/main/PY/19/solid.py
 
 nahrávka
 https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20241002_175845-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
