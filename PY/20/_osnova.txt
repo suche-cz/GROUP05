@@ -1,0 +1,26 @@
+1. úkoly
+2. opakování
+Testování
+- motivace testování
+- druhy testování
+- co je to UnitTest
+- co bychom měli dodržovat
+
+SOLID principles
+
+3. funkce jako parametr
+4. rekurze
+- co to je
+- příklad faktorial
+- výhody nevhýhody (vs cyklus)
+- kdy to použít - příklad stromové struktury
+
+5. dekorator
+- co to je
+- příklad
+- kdy to použít
+
+6. návrhové vzory
+https://refactoring.guru/
+
+7. další hodinu Databáze

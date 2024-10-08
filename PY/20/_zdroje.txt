@@ -1,0 +1,9 @@
+
+rekurze:
+https://cs.wikipedia.org/wiki/Rekurze_(programov%C3%A1n%C3%AD)
+
+práce s funkcemi
+https://www.freecodecamp.org/news/first-class-functions-and-closures-in-python/
+
+nahrávka:
+https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20241007_180007-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
