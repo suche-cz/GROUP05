@@ -1,0 +1,13 @@
+1. Vyberte si jeden návrhový vzor a zjistěte:
+
+- základní popis
+- dovody proč se používá
+- a řešení
+
+https://refactoring.guru/design-patterns/catalog
+
+
+
+2. Projděte si příklady pro *args a **kwargs co jsou zde:
+https://www.programiz.com/python-programming/args-and-kwargs
+

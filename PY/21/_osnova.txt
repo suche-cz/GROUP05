@@ -1,0 +1,9 @@
+1) tvůrce funkci -> dekorator
+2) lambda, map, filter
+3) cache
+4) debugování
+5) návrhové vzory
+
+bit, byte, kodování textu
+
+databáze
