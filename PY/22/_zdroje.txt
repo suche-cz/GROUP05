@@ -1,4 +1,8 @@
 
+Bínární, hex čísla (jsou tak i čísla v 8 soustavě)
+https://exercism.org/tracks/python/concepts/binary-octal-hexadecimal
+https://www.geeksforgeeks.org/working-with-binary-data-in-python/
+
 Co je to databáze:
 https://cs.wikipedia.org/wiki/Datab%C3%A1ze
 
