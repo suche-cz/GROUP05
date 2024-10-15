@@ -1,7 +1,7 @@
 1) zkopírujte funkci factorial do souboru s testem (ukol 19.) a znovu spusťte testy zda procházejí
 
 2) vytvořte funkci calculate, která bude přijímat 2 čísla a,b
-- třetí parametr bude libovolná funkce, která se zavolá pro tyto čísla uvnotř funkce calculate
+- třetí parametr bude libovolná funkce, která se zavolá pro tyto čísla uvnitř funkce calculate
   - add
   - sub
 

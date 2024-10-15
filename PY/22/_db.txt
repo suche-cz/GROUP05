@@ -1,0 +1,28 @@
+1. databáze = db
+- uložiště informací
+- má strukturovanou formu
+
+
+A. DB Server (jako hardware, PC)
+
+B. DB Engine - jako software
+- Mysql (free)
+- PostgreSQL (free)
+- Oracle (placená)
+- SQL Server (placená, demo verze)
+- SQLite - odlehčená db
+- MongoDB (objektová DB)
+
+C. DB jako data
+
+Základní operace:
+CRUD operace:
+C - create - přidat
+R - retrieve (read) - najít, číst
+U - update - upravit
+D - delete - smazání
+
+Záklaní db objekty
+- tabulka
+- sloupec (column + datový typ)
+- záznamy (řádky)

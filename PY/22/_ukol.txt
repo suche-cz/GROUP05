@@ -1,0 +1,12 @@
+1. dodějelte předchozí úkoly pokud nemáte
+
+2. do naší databáze co jsme udělali na hodině vytvořte tabulku:
+Country se sloupci:
+    id: int, PK, NN, AI
+    name: varchar(100), NN
+
+Poznámky:
+PK = primární klíč (jednoznačně určuje záznam)
+NN = Not NULL (zamezí vložení NULL hodnoty)
+AI = Auto Increment (automaticky zvětšované číslo)
+
