@@ -1,0 +1,23 @@
+vytvořte db 23_books.db
+
+vytvořte následující tabulky
+
+books
+    id (INT, PK)
+    title (VARCHAR)
+    author_id (INT)
+    published_year (INT)
+    price (INT)
+
+authors
+    id (INT, PK)
+    first_name (VARCHAR)
+    last_name (VARCHAR)
+    country (VARCHAR)
+
+
+Cvičení na SQL - příkazy si uložte do souboru 23_sql.txt nebo 23_sql.sql
+a. Pomocí insert vložte 3 záznamy autorů a 5 záznamů pro knihy (INSERT)
+b. Najít knihy vydané po roce 2010. (SELECT + WHERE)
+c. Najít a seřadit knihy podle ceny od nejdražší po nejlevnější. (SELECT + ORDER BY)
+d. Vypsat názvy knih spolu se jmény autorů.

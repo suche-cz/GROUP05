@@ -1,0 +1,6 @@
+
+Ukázka záznamů
+https://docs.google.com/spreadsheets/d/1a91FiLOmVm_C3VykCe_5xnzt4f-S0v5RI-Pwsq9WyCI/edit?gid=0#gid=0
+
+Pokračovat s test_db.db
+- měli tam úkol vytvořt tabulku Country, tak tuto tabulku nedělat
