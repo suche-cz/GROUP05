@@ -1,0 +1,15 @@
+Databázový index je struktura, která zrychluje vyhledávání a načítání dat v databázi.
+Funguje podobně jako rejstřík v knize – namísto prohledávání celého obsahu (tabulky)
+umožňuje rychlý přístup k řádkům na základě hodnot v indexovaných sloupcích.
+
+Typy indexů:
+
+B-strom (B-tree): Nejčastější typ, vhodný pro obecné dotazy.
+
+GIN a GiST: Efektivní pro full-textové vyhledávání a prostorové dotazy (např. v PostgreSQL).
+
+Hash: Rychlý pro přesné porovnání hodnot, ale méně flexibilní.
+
+
+Indexy výrazně zlepšují výkon čtení, ale zpomalují operace zápisu (insert/update/delete),
+protože databáze musí indexy aktualizovat.

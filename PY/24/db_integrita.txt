@@ -1,0 +1,17 @@
+Databázová integrita zajišťuje konzistenci, přesnost a spolehlivost dat v databázi.
+
+Základní typy:
+
+Entitní integrita:
+Každý záznam má unikátní primární klíč, což zabraňuje duplicitám.
+
+Referenční integrita:
+Cizí klíče zajišťují, že odkazy mezi tabulkami jsou platné (např. existující záznamy v odkazovaných tabulkách).
+
+Doménová integrita:
+Určuje povolené hodnoty pro dané sloupce (např. typy dat, omezení hodnot).
+
+Integrita byznysových pravidel:
+Dodržuje specifická pravidla daného systému, např. zákaz záporných hodnot pro ceny.
+
+Díky těmto pravidlům je databáze konzistentní a chráněna proti chybným nebo neúplným datům.

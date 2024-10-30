@@ -1,0 +1,23 @@
+navrhněte tabulku a vztahy pro entity Článek a Autor
+- zjistěte kardinalitu mezi entitami (1:1, 1:N, N:M)
+- zjistěte jaké atributy by mohly mít
+- zdůvodněte náš návrh
+
+odevzdejte jako text
+24_clanek_autor.txt
+
+
+Dělali jsme například:
+
+Tabulka Pracovnik
+- id (pk, int)
+- jmeno (varchar)
+- pozice_id (fk na Pozice.id) 1:N
+
+Tabulka Pozice
+- id (pk, int)
+- nazev (varchar)
+
+Zdůvodnění:
+- u pracovníka chceme mít jeho jméno a pozici, ve vztahu 1:N chceme modelovat jen jeho aktuální pozici
+- pozice obsahuje název a je to v samostatné tabulce

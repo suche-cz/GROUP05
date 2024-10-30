@@ -1,0 +1,17 @@
+Kardinalita vztahu
+https://e-learning.vscht.cz/mod/book/view.php?id=63028&chapterid=2349
+https://docs.google.com/spreadsheets/d/1GUvK3luUkXzqFSCPF7VQ_LJYgeipaVldVcAoTahz82c/edit?usp=sharing
+
+foreign key: ON DELETE actions:
+https://www.sqlite.org/foreignkeys.html#fk_actions
+
+Ukázková db:
+https://www.sqlitetutorial.net/sqlite-sample-database/
+
+vysvětlené pojmů ve vlastních souborech:
+db_indexy.txt
+db_integrita.txt
+db_relace.txt
+
+Záznam
+https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20241030_180045-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view

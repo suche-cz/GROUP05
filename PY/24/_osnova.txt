@@ -1,0 +1,46 @@
+Opakování:
+    jaké db známe
+    Základní prvky databáze
+    CRUD operace
+    Primární vs Cizí klíč (Primary Key, Foreign Key)
+    Vztah mezi tabulkami + join
+
+-------------------
+pk | jmeno | pozice_id
+-------------------
+1  | Jan   | 1
+2  | Jana  | 1
+3  | Petr  | 2
+
+-----------
+pk(tinyint) | name 
+-----------
+1  | tester
+2  | designer  
+....
+50 | manager
+
+
+Domácí úkoly
+
+SŘBD - systém řízení báze dat
+DBMS - database management system
+
+1. data jako 1 tabulka -> přidat firmu, kde pracuje
+2. vztahy mezi tabulkami 1:1, 1:N, N:M - kardinalita
+
+1:1
+1:1*
+1:N
+1:N*
+
+3. realná dabáze - z json dat
+
+Kardinalita vztahu
+https://e-learning.vscht.cz/mod/book/view.php?id=63028&chapterid=2349
+
+foreign key: ON DELETE actions:
+https://www.sqlite.org/foreignkeys.html#fk_actions
+
+Ukázková db:
+https://www.sqlitetutorial.net/sqlite-sample-database/
