@@ -6,3 +6,6 @@ které jsou vztažené k nějakému typu entity.
 Tento pojem vychází z matematiky, kde relace představuje množinu uspořádaných dvojic nebo n-tic.
 Databáze tedy používají tabulky (relace) jako základní strukturu pro ukládání dat,
 a vztahy mezi těmito tabulkami (např. 1, N) jsou pak specifikovány přes cizí klíče.
+
+více zde:
+https://e-learning.vscht.cz/mod/book/view.php?id=63030
