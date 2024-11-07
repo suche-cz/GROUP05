@@ -1,0 +1,23 @@
+0. ukoly
+1. opakování kardinalita (1:1, 1:N, N:M)
+
+<Hlavní město> 1:1
+<Mesto ve state> 1:N
+
+Stat              Město
+ČR (hlavni_mesto_id) <Hlavní město> Praha (stat_id)
+                                    Brno (stat_id)
+SK <Hlavní město> Bratislava
+
+2. pracovat s ukázkovou databázi
+- složitější dotazy (joiny, agregační funkce-avg, min, max, sum s join)
+
+- optimalizace Composer do vlastní tabulky?
+- vytvoření many-to-many vazby
+
+atomické hodnoty
+entita pokud má význam existovat samostatně
+
+DB Normalizace
+
+Framework

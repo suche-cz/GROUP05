@@ -1,2 +1,4 @@
 /html_projekty/
 /ukoly/
+__pycache__
+.env
