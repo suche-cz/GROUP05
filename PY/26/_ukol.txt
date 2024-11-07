@@ -1,0 +1,5 @@
+Podle souboru django-project-install.pdf
+vytvořte projekt my_projekt
+
+Můžete si přečíst základní info o django na wiki
+https://cs.wikipedia.org/wiki/Django
