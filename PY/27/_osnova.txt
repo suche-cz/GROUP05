@@ -7,22 +7,5 @@ pokračování s django projectem
 
 API = aplication programing inteface
 
-Zavěrečný projekt:
-- django projekt
-- 1 aplikace
-- správné url cesty
-- Model View Template
-- min. 1 vlastní model
-- min. 3 typy stránek:
-    - seznam prvku
-    - detail prvku
-    - index (hlavní stránka)
-- html + css + (js volitelně)
-- vyplněná data
 
-data:
-- api data
-- open data
-- vlastní (ručné vyplněné nebo přes sql nebo script)
-- web scraping
 

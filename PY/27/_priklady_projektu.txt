@@ -1,0 +1,20 @@
+Knihovna citátů
+Model: Quote (pole text, author, created_at).
+
+Jednoduchý To-Do list
+Model: Task (pole title, description, completed, created_at).
+
+Receptář
+Model: Recipe (pole name, ingredients, instructions, created_at).
+
+Galerie obrázků
+Model: Image (pole title, description, uploaded_at, image_file).
+
+Seznam oblíbených knih
+Model: Book (pole title, author, published_year, genre).
+
+Recenze filmů
+Model: MovieReview (pole title, review_text, rating, created_at).
+
+Kalendář událostí
+Model: Event (pole name, description, date, location).
