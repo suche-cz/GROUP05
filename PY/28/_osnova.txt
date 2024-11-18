@@ -1,0 +1,19 @@
+Naposledy jsme dělali:
+- url s parametry
+- view s parametry
+- vykreslování hodnot v template
+- vytvoření modelu + migrace
+- přidání modelu do adminu
+
+
+Nastavit django debugtoolbar
+https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
+
+
+Pokračovat v aplikaci Articles
+- vytvořit stránky index, list, detail
+
+
+Po přestávce
+- promyšlení tématu pokud nemáme
+- pak konzultace

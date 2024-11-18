@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from articles.models import Article
 
-# Create your views here.
+def article_list(request):
+    articles = Article.objects.all()
+    context = {'articles': articles}
+    return render(request, 'articles/article_list.html', context)
+
+def article_detail(request, pk):
+    article = get_object_or_404(Article, id=pk)
+    # article = Article.objects.get(id=pk)
+    context = {'article': article}
+    return render(request, 'articles/article_detail.html', context)
