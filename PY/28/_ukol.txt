@@ -1,0 +1,8 @@
+Projděte si dokumenty:
+
+django_orm.txt - db dotazy
+django_template_language.txt - syntaxe pro templates
+
+obrázky:
+django_orm.png - vztah Modelů ORM a DB
+django_project.png - struktura django projectu

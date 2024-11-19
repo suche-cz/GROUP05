@@ -1,0 +1,28 @@
+Toto jsou základy pro Django template language.
+Více zde: https://docs.djangoproject.com/en/5.1/ref/templates/language/
+
+
+Vykreslení proměnné
+{{ variable }}
+
+Filtry - volání funkcí
+{{ variable|filter }}
+{{ variable|filter:argument }}
+
+Podmínky
+{% if condition %}
+    <!-- Content -->
+{% endif %}
+
+For cykly
+{% for item in list %}
+    {{ item }}
+{% empty %}
+    No items found.
+{% endfor %}
+
+Includování jiného template
+{% include "template.html" %}
+
+Komentář
+{# This is a comment #}

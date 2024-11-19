@@ -1,0 +1,11 @@
+Instalace django debug toolbar
+https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
+
+Statické a mediální soubory
+https://docs.djangoproject.com/en/5.1/howto/static-files/
+
+django template language v souboru
+django_template_language.txt
+
+Nahrávka:
+https://itstepedu.sharepoint.com/sites/FEPY11/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20241118_175806-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1&referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view

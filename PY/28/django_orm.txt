@@ -1,0 +1,47 @@
+Toto jsou základy pro Django ORM.
+ORM (Object-Relational Mapping) je způsob, jak pracovat s databází prostřednictvím objektů místo přímého psaní SQL dotazů.
+celá dokumentace:
+https://docs.djangoproject.com/en/5.1/topics/db/queries/
+
+-------------------------------------------------------------------------------
+
+## CREATE 
+article = Article.objects.create(title="My Title", content="Some content")
+
+-------------------------------------------------------------------------------
+
+## READ
+
+# vrátí všechny objekty
+Article.objects.all()
+
+# vrátí právě jeden, kde id=1
+Article.objects.get(id=1)
+
+# vrátí ty, které splňují podmínku, že title obsahuje "keyword", v sql jako: title LIKE "%keyword%"
+Article.objects.filter(title__icontains="keyword")
+
+# vrátí první resp. poslední záznam podle řazení
+Article.objects.first()
+Article.objects.last()
+
+-------------------------------------------------------------------------------
+
+## UPDATE
+
+# pokud v proměnné máme uložený object Article, můžeme mu nastavit atributy a pak zavolat save
+article.title = "Updated Title"
+article.save()
+
+# nebo můžeme z db vytáhout prvky, které jsou filtrované podle nějaké podmínky a těm nastavit novou hodnotu title
+Article.objects.filter(id=1).update(title="Bulk Update Title")
+
+-------------------------------------------------------------------------------
+
+## DELETE
+
+# vymažeme object article
+article.delete()
+
+# vymažeme všechny, co splňují podmínku
+Article.objects.filter(id=1).delete()
