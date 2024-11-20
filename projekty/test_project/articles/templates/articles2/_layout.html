@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>Hello world!</title>
+  </head>
+  <body>
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>Article web</strong></li>
+            </ul>
+            <ul>
+                <li><a href="{% url 'article_list' %}">All Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+      {% block article_content %}
+        <h2>PUT YOUR HTML HERE</h2>
+      {% endblock %}
+    </main>
+  </body>
+</html>

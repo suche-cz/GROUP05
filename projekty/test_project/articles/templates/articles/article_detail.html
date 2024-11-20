@@ -8,11 +8,17 @@
     <title>{{ article.title }}</title>
   </head>
   <body>
-    <!-- 127.0.0.1:8000/1/ -->
+    {% include 'articles/navbar.html' %}
+
     <main class="container">
         <h1>{{ article.title }}</h1>
-        <img src="{{ article.image.url }}">
-
+        {% if article.image %}
+          <img src="{{ article.image.url }}">
+        {% endif %}
+        {% comment %}
+        block koment
+        {% endcomment %}
+        {# řádkový koment #}
         {{ article.content|safe }}
     </main>
   </body>

@@ -1,0 +1,13 @@
+1. template include, extends - navigační část
+python manage.py shell
+
+2. formuláře - komentář k Article
+
+3. web scrapper
+4. json data api ?
+
+Společně:
+1. vytvoření projektu, app, nastavení
+2. nahrání na github
+3. gitignore
+
