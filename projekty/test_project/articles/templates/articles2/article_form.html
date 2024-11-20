@@ -1,0 +1,13 @@
+<!-- article_form.html -->
+
+{% extends "articles2/_layout.html" %}
+
+{% block article_content %}
+    <h1>Create Article</h1>
+
+    <form method="GET" action="">
+        <input name="title" type="text" required>
+        <textarea name="content" required></textarea>
+        <button type="submit">Odeslat</button>
+    </form>
+{% endblock %}
