@@ -1,0 +1,4 @@
+- koukněte na podobné weby pro inspiraci
+- navrhněte jaké stránky budete mít
+- navrhněte url cesty
+- dodělejte models

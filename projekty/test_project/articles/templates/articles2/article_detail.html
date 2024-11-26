@@ -10,4 +10,20 @@
     {% endif %}
 
     {{ article.content|safe }}
+
+    <hr>
+
+    <form method="POST" action="{% url 'create_comment' pk=article.id %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Uložit</button>
+    </form>
+
+    <h2>Komentáře:</h2>
+
+    {% for comment in article.comments.all %}
+        <div><b>{{ comment.autor }}</b> ({{ comment.create_dt }})</div>
+        <p>{{ comment.text }}</p>
+    {% endfor %}
+
 {% endblock %}
