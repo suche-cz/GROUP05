@@ -1,9 +1,18 @@
 
+Modely Many-to-Many
 https://docs.djangoproject.com/en/5.1/topics/db/models/#many-to-many-relationships
 
+Auth systém
 https://docs.djangoproject.com/en/5.1/topics/auth/default/
 
+
+Online Regulární výrazy
+
 https://pythex.org/
+
+
+
+GRAFY:
 
 Http
 https://quickchart.io/

@@ -1,0 +1,2 @@
+vytvořit si účet na pythonanywhere.com
+mít připravený projekt na PC na kterém budete pracovat + na GitHubu
