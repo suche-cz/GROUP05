@@ -1,6 +1,10 @@
 
 https://docs.djangoproject.com/en/5.1/topics/db/models/#many-to-many-relationships
 
+https://docs.djangoproject.com/en/5.1/topics/auth/default/
+
+https://pythex.org/
+
 Http
 https://quickchart.io/
 

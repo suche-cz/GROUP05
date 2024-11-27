@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 from articles.models import Article
 from articles.forms import CommentForm
 
@@ -25,7 +26,9 @@ def create_comment(request, pk):
     url = reverse('article_detail', kwargs={'pk': pk})
     return redirect(url)
 
+# User
 
+@login_required
 def article_create(request):
     print(request.GET)
     if request.GET:

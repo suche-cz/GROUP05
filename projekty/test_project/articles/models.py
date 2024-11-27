@@ -1,6 +1,12 @@
 from django.db import models
+from django.contrib.auth import get_user_model # User
+
+User = get_user_model() # User
+
 
 class Article(models.Model):
+    # User
+    author = models.ForeignKey(User, on_delete=models.PROTECT, blank=True, null=True)
     title = models.CharField(max_length=100)
     content = models.TextField(blank=True, default='')
     image = models.ImageField(blank=True, null=True)
