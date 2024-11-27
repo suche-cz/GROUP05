@@ -1,0 +1,11 @@
+
+https://docs.djangoproject.com/en/5.1/topics/db/models/#many-to-many-relationships
+
+Http
+https://quickchart.io/
+
+JS
+https://www.chartjs.org/
+
+Python
+https://matplotlib.org/

@@ -2,3 +2,12 @@
 - navrhněte jaké stránky budete mít
 - navrhněte url cesty
 - dodělejte models
+
+/
+/vek/
+/pohlavi/
+/druh/
+/kraj/
+
+.xls
+.xlsx
