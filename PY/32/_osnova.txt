@@ -1,0 +1,25 @@
+https://gitignore.io/
+
+
+Pro privátní repozitáře je potřeba vygenerovat token
+https://github.com/settings/tokens/new
+
+
+git clone https://github.com/<username>/<repo> <project_name>
+cd <project_name>
+
+git pull
+
+mkvirtualenv --python=python3.10 <project_name_env>
+
+pip install -r r.txt
+
+/home/suche/
+
+python manage.py collectstatic
+
+
+
+https://drive.google.com/drive/folders/1pktOrKWCeiqCs_CQ5gKRhpYtRdyWZeYB
+
+https://github.com/DjangoGirls/tutorial-extensions/blob/master/en/manual_pythonanywhere_deploy/README.md

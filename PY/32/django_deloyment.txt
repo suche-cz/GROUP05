@@ -1,0 +1,28 @@
+https://www.pythonanywhere.com/
+MySQL free, PostgreSQL paid
+předinstalováno mnoho knihoven
++ specializované pro python
++ jednoduché a přimočaré
++ zdarma, nizká cena
+- max PY 3.10
+- rychlost, UI rozhranní
+
+
+https://render.com/
+python 3.11
+instalace z githubu
+- trvá to než se zbuilduje
+- zdarma nastavení domény ?
+https://www.youtube.com/watch?v=wczWm8j4v9w&t=1002
+
+
+https://railway.com/
+- přístup to github
+- vlastní způsob instalace
+
+https://www.heroku.com/
+- velmi špatná zkušenost s registací
+- pro nasazení app je potřeba platební karta
+
+https://fly.io/
+- vyžaduje platební kartu
